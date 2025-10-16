@@ -3,6 +3,7 @@
 import { useAuth } from "@/contexts/AuthContext";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
+import { AnalyticsDashboard } from "@/components/AnalyticsDashboard";
 
 export default function DashboardPage() {
   const { isAuthenticated } = useAuth();
@@ -18,10 +19,5 @@ export default function DashboardPage() {
     return null;
   }
 
-  return (
-    <div>
-      <h1 className="text-4xl font-bold">Dashboard</h1>
-      <p>Welcome to the admin dashboard!</p>
-    </div>
-  );
+  return <AnalyticsDashboard />;
 }

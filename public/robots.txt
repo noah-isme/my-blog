@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Block admin areas
+Disallow: /admin
+Disallow: /login
+Disallow: /dashboard
+Disallow: /posts/new
+Disallow: /posts/*/edit
+
+# Sitemap
+Sitemap: http://localhost:3000/sitemap.xml

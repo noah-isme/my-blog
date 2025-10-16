@@ -12,7 +12,7 @@ import {
 
 const navigation = [
   { name: "Dashboard", href: "/dashboard", icon: LayoutDashboard },
-  { name: "Posts", href: "/posts", icon: FileText },
+  { name: "Posts", href: "/manage-posts", icon: FileText },
   { name: "Media", href: "/media", icon: Image },
   { name: "Users", href: "/users", icon: Users },
   { name: "Taxonomies", href: "/taxonomies", icon: Tags },
@@ -22,7 +22,7 @@ function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function SidebarNav() {
+export default function SidebarNav({ onItemClick }: { onItemClick?: () => void }) {
   const pathname = usePathname();
 
   return (
@@ -31,19 +31,20 @@ export default function SidebarNav() {
         <Link
           key={item.name}
           href={item.href}
+          onClick={onItemClick}
           className={classNames(
             pathname === item.href
-              ? "bg-gray-900 text-white"
-              : "text-gray-300 hover:bg-gray-700 hover:text-white",
-            "group flex items-center rounded-md px-2 py-2 text-sm font-medium"
+              ? "bg-accent text-white shadow-lg"
+              : "text-textSecondary hover:bg-accent/10 hover:text-accent",
+            "group flex items-center rounded-xl px-4 py-3 text-sm font-medium transition-all duration-200"
           )}
         >
           <item.icon
             className={classNames(
               pathname === item.href
-                ? "text-gray-300"
-                : "text-gray-400 group-hover:text-gray-300",
-              "mr-3 h-6 w-6 flex-shrink-0"
+                ? "text-white"
+                : "text-textSecondary group-hover:text-accent",
+              "mr-3 h-5 w-5 flex-shrink-0 transition-colors duration-200"
             )}
             aria-hidden="true"
           />
