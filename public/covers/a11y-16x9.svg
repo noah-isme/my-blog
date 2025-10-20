@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Ilustrasi aksesibilitas antarmuka</title>
+  <desc id="desc">Ikon kursi roda abstrak di atas latar kontras biru tua.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="48" fill="url(#bg)" />
+  <g transform="translate(300 120)" fill="none" stroke="#60A5FA" stroke-width="24" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="240" cy="240" r="120" />
+    <path d="M240 120v120l120 60" />
+    <path d="M240 240l-90 150" />
+    <circle cx="240" cy="60" r="36" fill="#F8FAFC" stroke="none" />
+  </g>
+</svg>
