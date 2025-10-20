@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Ilustrasi performa web</title>
+  <desc id="desc">Diagram garis naik di atas gradien biru gelap.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1020" />
+      <stop offset="100%" stop-color="#1E3A8A" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="48" fill="url(#bg)" />
+  <polyline points="120 540 360 420 560 480 780 300 1040 360" fill="none" stroke="#60A5FA" stroke-width="24" stroke-linecap="round" stroke-linejoin="round" />
+  <circle cx="780" cy="300" r="18" fill="#F8FAFC" />
+  <circle cx="1040" cy="360" r="18" fill="#F8FAFC" />
+</svg>

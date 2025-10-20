@@ -1,0 +1,11 @@
+{
+  "name": "Noah",
+  "bio": "Engineer frontend dan desainer yang suka menulis tentang web performa, UX, dan produktivitas.",
+  "avatar": "/avatar-noah.svg",
+  "social": {
+    "x": "https://twitter.com/noah",
+    "github": "https://github.com/noah",
+    "linkedin": "https://www.linkedin.com/in/noah"
+  },
+  "topics": ["Frontend", "UX", "Accessibility", "Performance", "TypeScript"]
+}

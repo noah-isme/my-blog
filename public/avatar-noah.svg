@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-labelledby="title desc">
+  <title id="title">Avatar ilustrasi Noah</title>
+  <desc id="desc">Lingkaran bergradasi biru dengan inisial N di tengah.</desc>
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60A5FA" />
+      <stop offset="100%" stop-color="#2563EB" />
+    </linearGradient>
+  </defs>
+  <circle cx="100" cy="100" r="96" fill="url(#grad)" />
+  <text x="50%" y="55%" text-anchor="middle" font-size="96" font-family="'Inter', system-ui" font-weight="700" fill="#F8FAFC">
+    N
+  </text>
+</svg>

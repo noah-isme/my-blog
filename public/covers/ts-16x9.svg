@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Ilustrasi TypeScript</title>
+  <desc id="desc">Huruf TS tebal di atas latar gradasi biru elektrik.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1D4ED8" />
+      <stop offset="100%" stop-color="#22D3EE" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="48" fill="url(#bg)" />
+  <text x="50%" y="52%" text-anchor="middle" font-size="240" font-family="'Newsreader', 'Playfair Display', serif" font-weight="800" fill="#0B1020">
+    TS
+  </text>
+</svg>
