@@ -4,7 +4,7 @@ import type { PostMeta } from '@/lib/types'
 
 export default function PostCard({ post }: { post: PostMeta }) {
   return (
-    <article className="group overflow-hidden rounded-lg border border-black/5 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-md focus-within:-translate-y-1 focus-within:shadow-md dark:border-white/10 dark:bg-slate-900">
+    <article className="group card-hover overflow-hidden rounded-lg border border-black/5 bg-white shadow-sm dark:border-white/10 dark:bg-slate-900">
       <Link
         href={`/blog/${post.slug}`}
         className="block focus:outline-none"
@@ -31,8 +31,8 @@ export default function PostCard({ post }: { post: PostMeta }) {
               </span>
             ))}
           </div>
-          <h3 className="text-lg font-semibold leading-tight group-hover:underline group-focus-visible:underline">
-            {post.title}
+          <h3 className="text-lg font-semibold leading-tight">
+            <span className="link-underline">{post.title}</span>
           </h3>
           <p className="mt-1 text-sm text-slate-600 dark:text-slate-300">
             {new Date(post.date).toLocaleDateString('id-ID', { dateStyle: 'long' })} • {post.readingTime.text}

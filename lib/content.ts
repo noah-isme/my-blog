@@ -1,7 +1,10 @@
 import fs from 'node:fs'
 import path from 'node:path'
-import matter from 'gray-matter'
-import readingTime from 'reading-time'
+// Both gray-matter and reading-time are CJS modules, so we can require them directly
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const matter = require('gray-matter')
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const readingTime = require('reading-time')
 import type { PostMeta, PostFrontmatter } from './types'
 
 const POSTS_DIR = path.join(process.cwd(), 'content', 'posts')
@@ -34,7 +37,7 @@ export function getAllPosts(): PostMeta[] {
     return {
       ...frontmatter,
       slug,
-      readingTime: readingTime(content),
+  readingTime: readingTime(content),
     }
   })
 
@@ -57,7 +60,7 @@ export function getPostBySlug(slug: string) {
   const meta: PostMeta = {
     ...frontmatter,
     slug,
-    readingTime: readingTime(content),
+  readingTime: readingTime(content),
   }
 
   return { meta, content }

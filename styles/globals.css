@@ -1,3 +1,81 @@
+.ripple-btn {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.08s cubic-bezier(0.4,0,0.2,1);
+  will-change: transform;
+}
+.ripple-btn:active {
+  transform: scale(0.97);
+}
+.ripple-container {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+.ripple-effect {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(37,99,235,0.18);
+  animation: ripple-anim 0.5s linear;
+  transform: scale(0);
+}
+@keyframes ripple-anim {
+  to {
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}
+html.focus-reading header,
+html.focus-reading footer {
+  display: none !important;
+}
+html {
+  transition: background 0.4s cubic-bezier(0.4,0,0.2,1), color 0.4s cubic-bezier(0.4,0,0.2,1);
+}
+.glassmorphism {
+  background: rgba(255,255,255,0.75);
+  box-shadow: 0 4px 32px 0 rgba(31, 38, 135, 0.07);
+  backdrop-filter: blur(12px) saturate(1.2);
+  -webkit-backdrop-filter: blur(12px) saturate(1.2);
+  border: 1px solid rgba(255,255,255,0.18);
+}
+
+@media (prefers-color-scheme: dark) {
+  .glassmorphism {
+    background: rgba(15,23,42,0.82);
+    border: 1px solid rgba(96,165,250,0.10);
+  }
+}
+
+body {
+  transition: background 0.4s cubic-bezier(0.4,0,0.2,1), color 0.4s cubic-bezier(0.4,0,0.2,1);
+}
+.card-hover {
+  transition: all 0.25s cubic-bezier(0.4,0,0.2,1);
+}
+.card-hover:hover, .card-hover:focus-visible {
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08), 0 1.5px 6px rgba(80,80,180,0.06);
+}
+
+.link-underline {
+  position: relative;
+  text-decoration: none;
+}
+.link-underline::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background: currentColor;
+  transition: width 0.25s cubic-bezier(0.4,0,0.2,1);
+}
+.link-underline:hover::after, .link-underline:focus-visible::after {
+  width: 100%;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
