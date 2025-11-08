@@ -1,7 +1,3 @@
-Bagus banget — kamu ingin konsep **UI/UX modern, elegan, interaktif, dan animatif** untuk **CMS blog pribadi**. Mari kita rancang konsep lengkapnya, mencakup **gaya visual, arsitektur navigasi, interaksi, animasi, dan pengalaman pengguna**.
-
----
-
 ## 🎨 **1. Konsep Desain & Identitas Visual**
 
 ### ✦ Tema Utama
